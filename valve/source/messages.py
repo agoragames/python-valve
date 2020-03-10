@@ -473,7 +473,7 @@ class InfoResponse(Message):
 class GetChallengeResponse(Message):
 
     fields = (
-        ByteField("response_type", validators=[lambda x: x == 0x41]),
+        ByteField("response_type", validators=[lambda x: x == 0x41 or x == 69]),
         LongField("challenge")
     )
 
